@@ -25,7 +25,7 @@
         $resultado=strcmp($variable1, $variable2); // devuelve 1 si no son iguales y 0 si son iguales
         echo $resultado . " no son iguales <br>";
 
-        $resultado=strcasecmp($variable1, $variable2); // devuelve 1 si no son iguales y 0 si son iguales
+        $resultado=strcasecmp($variable1, $variable2); // devuelve 1 si son iguales y 0 si no son iguales
         echo $resultado . " si son iguales <br>";
 
         if($resultado){ //! lo contraloria que necesita si resultado no es verdadero 
