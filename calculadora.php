@@ -28,6 +28,14 @@ function calculadora($calcular)
         global $numero1;
         global $numero2;
         echo "el resultador es: " . ($numero1 / $numero2);
+    } elseif (!strcmp("Incremento", $calcular)) {
+        global $numero1;
+        $numero1++;
+        echo "el resultador es: " . $numero1;
+    } elseif (!strcmp("Decremento", $calcular)) {
+        global $numero1;
+        $numero1--;
+        echo "el resultador es: " . $numero1;
     } else {
         echo "error digite otra ves los valores";
     }
