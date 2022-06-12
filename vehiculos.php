@@ -2,7 +2,9 @@
 
 class Coche
 {
-    public $ruedas;
+    //private solo es acesible dentro de la clase y protected se tiene acceso desde la clase
+    //principal y sus hijas
+    protected $ruedas;
     public $color;
     public $motor;
     function __construct()
@@ -10,6 +12,10 @@ class Coche
         $this->ruedas = 4;
         $this->color = "";
         $this->motor = 1600;
+    }
+    function get_ruedas(){
+
+        return $this->ruedas;
     }
 
     function  arrancar()
